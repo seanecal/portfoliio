@@ -1,0 +1,50 @@
+.pf__navbar {
+  position: absolute;
+  top: 80vh;
+  z-index: 100;
+  width: 100%;
+  text-align: end;
+}
+
+.pf__nav-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: min(4vw);
+}
+
+.pf__navbar a {
+  color: var(--color-grey-dark);
+  font-family: var(--font-roboto);
+  font-size: max(6vw);
+  font-weight: 900;
+}
+
+.pf__navbar a:hover {
+  background: linear-gradient(90deg, #fb0094, #0000ff, #00ff00, #ffff00, #fb0094, #0000ff, #00ff00, #ffff00,#fb0094);
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  filter: blur(.5px);
+  animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0 0;
+  }
+  0% {
+    background-position: 500% 0;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .pf__navbar {
+    padding: 1rem;
+  }
+  .pf__navbar a {
+    font-size: 9vw;
+  }
+}

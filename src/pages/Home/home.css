@@ -21,25 +21,102 @@
 .pf__home__colors {
   position: fixed;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  top: -380px;
-  left: -300px;
+  top: 50px;
+  left: -5000px;
   z-index: -10;
-  width: 4000px;
   opacity: 0.9;
+  width: 12000px;
+  gap: 0.7rem;
 }
 
 .pf__home__colors-strip {
-  height: 4rem;
-  transform: rotate(-30deg);
+  display: flex;
+  height: 6rem;
+  width: 33.33%;
+  transform-origin: center;
+}
+
+.pf__home__colors-strip:nth-child(1) {
+  animation: move 4s ease-in-out infinite alternate;
+}
+.pf__home__colors-strip:nth-child(2) {
+  animation: move 4s ease-in-out infinite alternate;
+  animation-delay: 0.05s;
+}
+.pf__home__colors-strip:nth-child(3) {
+  animation: move 5.5s ease-in-out infinite alternate;
+  animation-delay: 0.02s;
+}
+.pf__home__colors-strip:nth-child(4) {
+  animation: move 3.7s ease-in-out infinite alternate;
+}
+.pf__home__colors-strip:nth-child(5) {
+  animation: back 3.7s ease-in-out infinite alternate;
+}
+.pf__home__colors-strip:nth-child(6) {
+  animation: move 9s ease-in-out infinite alternate;
+}
+.pf__home__colors-strip:nth-child(7) {
+  animation: back 3s ease-in-out infinite alternate;
+}
+.pf__home__colors-strip:nth-child(8) {
+  animation: move 7.3s ease-in-out infinite alternate;
+}
+.pf__home__colors-strip:nth-child(9) {
+  animation: back 3.8s ease-in-out infinite alternate;
+}
+.pf__home__colors-strip:nth-child(10) {
+  animation: back 5s ease-in-out infinite alternate;
+}
+.pf__home__colors-strip:nth-child(11) {
+  animation: back 8.5s ease-in-out infinite alternate;
+}
+.pf__home__colors-strip:nth-child(12) {
+  animation: move 4s ease-in-out infinite alternate;
+}
+.pf__home__colors-strip:nth-child(13) {
+  animation: move 3.5s ease-in-out infinite alternate;
+}
+.pf__home__colors-strip:nth-child(14) {
+  animation: move 8s ease-in-out infinite alternate;
+}
+.pf__home__colors-strip:nth-child(15) {
+  animation: move 10s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+  0%{
+    transform: rotate(-30deg) translateX(0);
+  }
+  40%{
+    transform: rotate(-30deg) translateX(0);
+  }
+  100%{
+    transform: rotate(-30deg) translateX(12000px);
+  }
+}
+
+@keyframes back {
+  0%{
+    transform: rotate(-30deg) translateX(0);
+  }
+  25%{
+    transform: rotate(-30deg) translateX(0);
+  }
+  100%{
+    transform: rotate(-30deg) translateX(-12000px);
+  }
 }
 
 
 @media screen and (max-width: 625px){
   .pf__home__name {
-    top: 120px;
-    left: -100px;
-    width: 130%;
+    top: 200px;
+    left: 0px;
+    width: 100%;
   }
   .pf__home__colors {
     top: -900px;
