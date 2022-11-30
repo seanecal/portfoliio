@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Great+Vibes&family=Roboto&display=swap');
+
+:root {
+  --font-roboto:'Roboto', sans-serif;
+
+  --color-bg: #000000;
+  --color-gold: #FFD702;
+  --color-orange: #FCC202;
+  --color-raddish: #E76146;
+  --color-grey-light: #B4B4B4;
+  --color-grey: #696969;
+  --color-grey-dark: #555555;
+  --color-grey-dev: #7F807F;
+  --color-green-light: #B5CDA8;
+  --color-green-dark: #5F894E;
+  --color-blue-light: #9BD9FB;
+  --color-blue-dark: #559CD6;
+  --color-white: #FFFFFE;
+  --color-purplee: #C586C0;
+  --color-gold: #FFD702;
+  --color-gold: #FFD702;
+  --color-gold: #FFD702;
+}

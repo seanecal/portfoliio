@@ -1,0 +1,24 @@
+.pf__home {
+  position: relative;
+  padding: 0;
+}
+
+.pf__home__name {
+  position: absolute;
+  top: -50px;
+  left: -40px;
+}
+
+.pf__home__name img {
+  width: 100%;
+  height: 100%;
+}
+
+
+@media screen and (max-width: 625px){
+  .pf__home__name {
+    top: 120px;
+    left: -100px;
+    width: 130%;
+  }
+}
