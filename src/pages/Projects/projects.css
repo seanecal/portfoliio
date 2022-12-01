@@ -1,0 +1,130 @@
+.pf__projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-bottom: 8rem;
+}
+
+.pf__projects__title .sign {
+  color:var(--color-grey-dark);
+  font-family: var(--font-roboto);
+  font-weight: 900;
+  font-size: 2vw;
+}
+
+.pf__projects__title .span {
+  color: var(--color-blue-dark);
+  font-family: var(--font-roboto);
+  font-weight: 900;
+  font-size: 2vw;
+}
+
+.pf__projects__title .projects {
+  color: var(--color-white);
+  font-family: var(--font-roboto);
+  font-weight: 900;
+  font-size: 6vw;
+  background: linear-gradient(90deg,#ffffff, #fb0094, #fb0094,#fb0094, #0000ff, #0000ff,#0000ff, #0000ff, #00ff00, #00ff00, #00ff00, #ffff00, #ffff00, #ffff00, #ffff00, #ffffff,#ffffff,#ffffff,#ffffff, #ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  filter: blur(.5px);
+  animation: blink 40s ease-out infinite;
+}
+
+@keyframes blink {
+  0% {
+    background-position: 0 0;
+  }
+  0% {
+    background-position: 500% 0;
+  }
+}
+
+.pf__projects__notice p {
+  color: var(--color-grey-dark);
+  font-family: var(--font-roboto);
+  font-size: 24px;
+}
+
+.pf__projects__notice a:hover {
+  color: var(--color-raddish)
+}
+
+.pf__projects__cards {
+  margin-top: 1rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.pf__projects__card {
+  border-radius: 1rem;
+  cursor: pointer;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: span 2;
+  box-shadow: 0.2rem 0.2em 0 var(--color-raddish);
+  border: .5px solid var(--color-raddish);
+  transform: scale(1);
+  transition: all 0.3s;
+}
+
+.pf__projects__card:hover, .pf__projects__card:focus {
+  transform: scale(1.01);
+  box-shadow: 0.8rem 0.8em 0 var(--color-raddish);
+}
+
+.pf__projects__card p {
+  display: none;
+}
+
+.pf__projects__card.active p {
+  display: block;
+}
+
+.pf__projects__card.active {
+  grid-column: 1 / span 6;
+  grid-row: 1 / span 2;
+  order: 0;
+  height: auto;
+}
+
+.pf__projects__card.inactive {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+@media screen and (max-width: 850px) {
+  .pf__projects__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0;
+  }
+  .pf__projects__card {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .pf__projects {
+    padding: 2rem 1rem;
+  }
+  .pf__projects__title .projects {
+    font-size: 9vw;
+  }
+  .pf__projects__title .span, .pf__projects__title .sign {
+    font-size: 3vw;
+  }
+  .pf__projects__notice p {
+    font-size: 16px;
+  }
+}

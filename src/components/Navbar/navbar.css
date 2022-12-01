@@ -1,8 +1,10 @@
 .pf__navbar {
-  position: absolute;
-  top: 80vh;
+  position: fixed;
+  bottom: 0;
+  right: 3vw;
   z-index: 100;
-  width: 100%;
+  display: flex;
+  justify-content: flex-end;
   text-align: end;
 }
 
@@ -20,8 +22,7 @@
   font-weight: 900;
 }
 
-.pf__navbar a:hover,
-.pf__navbar a:focus {
+.pf__navbar a:hover {
   background: linear-gradient(90deg, #fb0094, #0000ff, #00ff00, #ffff00, #fb0094, #0000ff, #00ff00, #ffff00,#fb0094);
   color:transparent;
   -webkit-background-clip: text;
@@ -29,7 +30,7 @@
   -webkit-text-fill-color: transparent;
   background-size: 500% auto;
   filter: blur(.5px);
-  animation: shine 10s linear infinite;
+  animation: shine 4s linear infinite;
 }
 
 @keyframes shine {
@@ -43,9 +44,19 @@
 
 @media screen and (max-width: 550px){
   .pf__navbar {
-    padding: 1rem;
+    padding: 1rem 0rem;
   }
   .pf__navbar a {
     font-size: 9vw;
+  }
+  .pf__navbar a:focus {
+    background: linear-gradient(90deg, #fb0094, #0000ff, #00ff00, #ffff00, #fb0094, #0000ff, #00ff00, #ffff00,#fb0094);
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    filter: blur(.5px);
+    animation: shine 10s linear infinite;
   }
 }

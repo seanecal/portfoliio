@@ -36,8 +36,8 @@ export function Home() {
      </div>
      <div className="pf__home__colors">
        <div className="pf__home__colors-strip" style={{background: "var(--color-orange)"}}/>
-       <div className="pf__home__colors-strip" style={{background: "var(--color-grey-verydark)"}}/>
        <div className="pf__home__colors-strip" style={{background: "var(--color-grey-dark)"}}/>
+       <div className="pf__home__colors-strip" style={{background: "var(--color-green-dark)"}}/>
        <div className="pf__home__colors-strip" style={{background: "var(--color-white)"}}/>
        <div className="pf__home__colors-strip" style={{background: "var(--color-blue-dark)"}}/>
        <div className="pf__home__colors-strip" style={{background: "var(--color-purple)"}}/>
@@ -46,7 +46,7 @@ export function Home() {
        <div className="pf__home__colors-strip" style={{background: "var(--color-blue-light)"}}/>
        <div className="pf__home__colors-strip" style={{background: "var(--color-raddish)"}}/>
        <div className="pf__home__colors-strip" style={{background: "var(--color-orange)"}}/>
-       <div className="pf__home__colors-strip" style={{background: "var(--color-green-dark)"}}/>
+       <div className="pf__home__colors-strip" style={{background: "var(--color-grey-verydark)"}}/>
        <div className="pf__home__colors-strip" style={{background: "var(--color-black)"}}/>
        <div className="pf__home__colors-strip" style={{background: "var(--color-white)"}}/>
        <div className="pf__home__colors-strip" style={{background: "var(--color-gold)"}}/>

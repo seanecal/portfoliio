@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import { Navbar } from './components'
 import { About, Home, Projects, Cv } from './pages'
+import { gsap } from 'gsap'
 
 function App() {
 
