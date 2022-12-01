@@ -4,6 +4,13 @@
   justify-content: flex-start;
   gap: 1rem;
   margin-bottom: 8rem;
+  height: auto;
+}
+
+.pf__projects__title {
+  opacity: 0;
+  position: relative;
+  top: -100px;
 }
 
 .pf__projects__title .sign {
@@ -44,6 +51,10 @@
   }
 }
 
+.pf__projects__notice {
+  opacity: 0;
+}
+
 .pf__projects__notice p {
   color: var(--color-grey-dark);
   font-family: var(--font-roboto);
@@ -59,7 +70,8 @@
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  height: auto;
+  opacity: 0;
 }
 
 .pf__projects__card {
@@ -82,12 +94,16 @@
   box-shadow: 0.8rem 0.8em 0 var(--color-raddish);
 }
 
-.pf__projects__card p {
+.pf__card__header {
   display: none;
 }
 
-.pf__projects__card.active p {
+.pf__projects__card.active .pf__card__header {
   display: block;
+}
+
+.pf__projects__card.active .pf__card__cover {
+  display: none;
 }
 
 .pf__projects__card.active {
@@ -95,11 +111,6 @@
   grid-row: 1 / span 2;
   order: 0;
   height: auto;
-}
-
-.pf__projects__card.inactive {
-  grid-column: span 1;
-  grid-row: span 1;
 }
 
 @media screen and (max-width: 850px) {

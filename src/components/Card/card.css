@@ -9,13 +9,25 @@
   height: 100%;
 }
 
+.pf__card__cover {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.pf__card__cover img {
+  width: 100%;
+}
+
 .pf__card__header {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   width: 100%;
   position: relative;
-  top: 40%;
+  top: 2%;
 }
 
 .pf__card__header__title h1 {
@@ -73,7 +85,6 @@
   position: absolute;
   top: 24px;
   right: 24px;
-
   width: 50%;
   height: 50%;
   z-index: -1;
