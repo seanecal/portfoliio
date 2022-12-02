@@ -37,6 +37,7 @@
   height: 6rem;
   width: 33.33%;
   transform-origin: center;
+  opacity: 0.9;
 }
 
 .pf__home__colors-strip:nth-child(1) {

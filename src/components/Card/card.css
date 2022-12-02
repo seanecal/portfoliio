@@ -28,6 +28,7 @@
   width: 100%;
   position: relative;
   top: 2%;
+  opacity: 0;
 }
 
 .pf__card__header__title h1 {
@@ -106,5 +107,15 @@
     background-size: 200% auto;
     filter: blur(.5px);
     animation: effect .3s linear 1;
+  }
+}
+
+
+@media screen and (max-width: 550px){
+  .pf__card__header__title h1 {
+    font-size: 32px;
+  }
+  .pf__card__header__title h1::first-letter {
+    font-size: 56px;
   }
 }

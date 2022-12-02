@@ -4,7 +4,10 @@ import { useState, useRef, useEffect } from 'react'
 import c3 from '../../assets/logo-c3.png'
 import wf from '../../assets/logo-wf.png'
 import sm from '../../assets/logo-sg.png'
-import { TweenMax, Power3 } from 'gsap'
+import { Power3, gsap} from 'gsap'
+import { Flip } from "gsap/Flip";
+
+gsap.registerPlugin(Flip);
 
 export function Projects() {
   const left = "<"
@@ -14,33 +17,36 @@ export function Projects() {
   let textItem = useRef(null);
   let noticeItem = useRef(null);
   let cardItem = useRef(null);
+  let aCard = useRef(null);
+  let aCard2 = useRef(null);
+  let aCard3 = useRef(null);
 
   useEffect(()=>{
-    TweenMax.to(
+    gsap.to(
       textItem,
-      .8,
       {
+        duration: 0.5,
         opacity: 1,
         y:110,
         ease:Power3.easeOut
       }
     )
-    TweenMax.to(
+    gsap.to(
       noticeItem,
-      2,
       {
+        duration:2,
         opacity:1,
         delay:1,
         ease:Power3.easeOut
       }
     )
-    TweenMax.to(
+    gsap.to(
       cardItem,
-      4,
       {
+        duration: 4,
         opacity:1,
         y:20,
-        delay: .8,
+        delay: .5,
         ease:Power3.easeOut
       }
     )
@@ -60,22 +66,157 @@ export function Projects() {
   }
 
   const handelChange1 = () => {
+    const state1 = Flip.getState(aCard)
+    const state2 = Flip.getState(aCard2)
+    const state3 = Flip.getState(aCard3)
     clearClass()
     setActive1(!active1)
+    Flip.from(
+      state1,
+      {
+        duration: 0.3,
+        absolute: true,
+        // absoluteOnLeave: true,
+        // nested: true,
+        // fade: true,
+        ease: Power3.easeInOut,
+        onComplete: ()=> {
+          gsap.to('.pf__card__header', {css:{opacity:'1'}})
+        }
+      }
+    )
     setActive2(false)
+    Flip.from(
+      state2,
+      {
+        duration: 0.3,
+        absolute: true,
+        // absoluteOnLeave: true,
+        // nested: true,
+        // fade: true,
+        ease: Power3.easeInOut,
+        onComplete: ()=> {
+          gsap.to('.pf__card__header', {css:{opacity:'1'}})
+        }
+      }
+    )
     setActive3(false)
+    Flip.from(
+      state3,
+      {
+        duration: 0.3,
+        absolute: true,
+        // absoluteOnLeave: true,
+        // nested: true,
+        // fade: true,
+        ease: Power3.easeInOut,
+        onComplete: ()=> {
+          gsap.to('.pf__card__header', {css:{opacity:'1'}})
+        }
+      }
+    )
   }
   const handelChange2 = () => {
+    const state1 = Flip.getState(aCard)
+    const state2 = Flip.getState(aCard2)
+    const state3 = Flip.getState(aCard3)
     clearClass()
-    setActive2(!active2)
     setActive1(false)
+    Flip.from(
+      state1,
+      {
+        duration: 0.3,
+        absolute: true,
+        // absoluteOnLeave: true,
+        // nested: true,
+        // fade: true,
+        ease: Power3.easeInOut,
+        onComplete: ()=> {
+          gsap.to('.pf__card__header', {css:{opacity:'1'}})
+        }
+      }
+    )
+    setActive2(!active2)
+    Flip.from(
+      state2,
+      {
+        duration: 0.3,
+        absolute: true,
+        // absoluteOnLeave: true,
+        // nested: true,
+        // fade: true,
+        ease: Power3.easeInOut,
+        onComplete: ()=> {
+          gsap.to('.pf__card__header', {css:{opacity:'1'}})
+        }
+      }
+    )
     setActive3(false)
+    Flip.from(
+      state3,
+      {
+        duration: 0.3,
+        absolute: true,
+        // absoluteOnLeave: true,
+        // nested: true,
+        // fade: true,
+        ease: Power3.easeInOut,
+        onComplete: ()=> {
+          gsap.to('.pf__card__header', {css:{opacity:'1'}})
+        }
+      }
+    )
   }
   const handelChange3 = () => {
+    const state1 = Flip.getState(aCard)
+    const state2 = Flip.getState(aCard2)
+    const state3 = Flip.getState(aCard3)
     clearClass()
-    setActive3(!active3)
     setActive1(false)
+    Flip.from(
+      state1,
+      {
+        duration: 0.3,
+        absolute: true,
+        // absoluteOnLeave: true,
+        // nested: true,
+        // fade: true,
+        ease: Power3.easeInOut,
+        onComplete: ()=> {
+          gsap.to('.pf__card__header', {css:{opacity:'1'}})
+        }
+      }
+    )
     setActive2(false)
+    Flip.from(
+      state2,
+      {
+        duration: .3,
+        absolute: true,
+        // absoluteOnLeave: true,
+        // nested: true,
+        // fade: true,
+        ease: Power3.easeInOut,
+        onComplete: ()=> {
+          gsap.to('.pf__card__header', {css:{opacity:'1'}})
+        }
+      }
+    )
+    setActive3(!active3)
+    Flip.from(
+      state3,
+      {
+        duration: .3,
+        absolute: true,
+        // absoluteOnLeave: true,
+        // nested: true,
+        // fade: true,
+        ease: Power3.easeInOut,
+        onComplete: ()=> {
+          gsap.to('.pf__card__header', {css:{opacity:'1'}})
+        }
+      }
+    )
   }
 
   return (
@@ -95,13 +236,13 @@ export function Projects() {
         <p>**watch me presenting SharedGoal <a href="#" target="__blank">[here]</a></p>
       </div>
       <div className="pf__projects__cards" ref={el=> {cardItem = el}}>
-        <div className={`pf__projects__card ${active1 ? "active" : ""}`} onClick={handelChange1}>
+        <div ref={el=> {aCard=el}}className={`pf__projects__card ${active1 ? "active" : ""}`} onClick={handelChange1}>
           <Card cover={sm} title="SharedGoal" line1="#Built with Ruby on Rails" line2="#Le Wagon final project " line3="Description" line4="#Web App that brings togetherness to solo learning process" line5="#Find your new goal for self improvement" line6="#Create your own learning group according to your preferences" line7="#Find your buddies to share self-improvement progress"  />
         </div>
-        <div className={`pf__projects__card ${active2 ? "active" : ""}`} onClick={handelChange2}>
+        <div ref={el=> {aCard2=el}} className={`pf__projects__card ${active2 ? "active" : ""}`} onClick={handelChange2}>
           <Card cover={wf} title="WishFund" line1="#Self initialized project" line2="#Project lauching page built with React" line3="For detailed information please check on lauching page" line4="Description" line5="#Decentralization" line6="#Full Democracy" line7="#Secured Finance"/>
         </div>
-        <div className={`pf__projects__card ${active3 ? "active" : ""}`} onClick={handelChange3}>
+        <div ref={el=> {aCard3=el}} className={`pf__projects__card ${active3 ? "active" : ""}`} onClick={handelChange3}>
           <Card cover={c3} title="Channel3" line1="#Self initialized project" line2="#Project lauching page built with React" line3="For detailed information please check on lauching page" line4="Description" line5="#Truly unbaised news by the AI" line6="#Everyone is a journist in their own life" line7="#Changing the traditional news and social media"/>
         </div>
       </div>

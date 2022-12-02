@@ -78,15 +78,13 @@
   border-radius: 1rem;
   cursor: pointer;
   height: 20rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   grid-column: span 2;
   box-shadow: 0.2rem 0.2em 0 var(--color-raddish);
   border: .5px solid var(--color-raddish);
   transform: scale(1);
-  transition: all 0.3s;
+  transition: width linear 5s height linear 5s;
+  z-index: 1;
+  background: var(--color-bg);
 }
 
 .pf__projects__card:hover, .pf__projects__card:focus {
@@ -108,9 +106,11 @@
 
 .pf__projects__card.active {
   grid-column: 1 / span 6;
-  grid-row: 1 / span 2;
+  grid-row: 1;
   order: 0;
   height: auto;
+  z-index: 100;
+  background: var(--color-bg);
 }
 
 @media screen and (max-width: 850px) {
@@ -121,13 +121,16 @@
     margin: 0;
   }
   .pf__projects__card {
-    height: auto;
+    height: 10rem;
+  }
+  .pf__projects__card.active {
+    order: -1;
   }
 }
 
 @media screen and (max-width: 550px) {
   .pf__projects {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem 0rem 1rem;
   }
   .pf__projects__title .projects {
     font-size: 9vw;
