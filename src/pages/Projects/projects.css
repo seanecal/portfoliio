@@ -76,13 +76,13 @@
 
 .pf__projects__card {
   border-radius: 1rem;
-  cursor: pointer;
+  /* cursor: zoom-in; */
   height: 20rem;
   grid-column: span 2;
   box-shadow: 0.2rem 0.2em 0 var(--color-raddish);
   border: .5px solid var(--color-raddish);
   transform: scale(1);
-  transition: width linear 5s height linear 5s;
+  transition: all .6s;
   z-index: 1;
   background: var(--color-bg);
 }

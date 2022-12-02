@@ -1,11 +1,11 @@
 import { Card } from '../../components'
 import './projects.css'
-import { useState, useRef, useEffect } from 'react'
 import c3 from '../../assets/logo-c3.png'
 import wf from '../../assets/logo-wf.png'
 import sm from '../../assets/logo-sg.png'
 import { Power3, gsap} from 'gsap'
 import { Flip } from "gsap/Flip";
+import { useState, useRef, useEffect } from 'react'
 
 gsap.registerPlugin(Flip);
 
@@ -74,7 +74,7 @@ export function Projects() {
     Flip.from(
       state1,
       {
-        duration: 0.3,
+        duration: 0.5,
         absolute: true,
         // absoluteOnLeave: true,
         // nested: true,
@@ -89,7 +89,7 @@ export function Projects() {
     Flip.from(
       state2,
       {
-        duration: 0.3,
+        duration: 0.5,
         absolute: true,
         // absoluteOnLeave: true,
         // nested: true,
@@ -104,7 +104,7 @@ export function Projects() {
     Flip.from(
       state3,
       {
-        duration: 0.3,
+        duration: 0.5,
         absolute: true,
         // absoluteOnLeave: true,
         // nested: true,
@@ -125,7 +125,7 @@ export function Projects() {
     Flip.from(
       state1,
       {
-        duration: 0.3,
+        duration: 0.5,
         absolute: true,
         // absoluteOnLeave: true,
         // nested: true,
@@ -140,7 +140,7 @@ export function Projects() {
     Flip.from(
       state2,
       {
-        duration: 0.3,
+        duration: 0.5,
         absolute: true,
         // absoluteOnLeave: true,
         // nested: true,
@@ -155,7 +155,7 @@ export function Projects() {
     Flip.from(
       state3,
       {
-        duration: 0.3,
+        duration: 0.5,
         absolute: true,
         // absoluteOnLeave: true,
         // nested: true,
@@ -176,7 +176,7 @@ export function Projects() {
     Flip.from(
       state1,
       {
-        duration: 0.3,
+        duration: 0.5,
         absolute: true,
         // absoluteOnLeave: true,
         // nested: true,
@@ -191,7 +191,7 @@ export function Projects() {
     Flip.from(
       state2,
       {
-        duration: .3,
+        duration: .5,
         absolute: true,
         // absoluteOnLeave: true,
         // nested: true,
@@ -206,7 +206,7 @@ export function Projects() {
     Flip.from(
       state3,
       {
-        duration: .3,
+        duration: .5,
         absolute: true,
         // absoluteOnLeave: true,
         // nested: true,
@@ -237,13 +237,13 @@ export function Projects() {
       </div>
       <div className="pf__projects__cards" ref={el=> {cardItem = el}}>
         <div ref={el=> {aCard=el}}className={`pf__projects__card ${active1 ? "active" : ""}`} onClick={handelChange1}>
-          <Card cover={sm} title="SharedGoal" line1="#Built with Ruby on Rails" line2="#Le Wagon final project " line3="Description" line4="#Web App that brings togetherness to solo learning process" line5="#Find your new goal for self improvement" line6="#Create your own learning group according to your preferences" line7="#Find your buddies to share self-improvement progress"  />
+          <Card cover={sm} title="SharedGoal" line1="#Built with Ruby on Rails" line2="#Le Wagon final project " line3="*The app is in a beta demo version" line4="Description" line5="#Web App that brings togetherness to solo learning process" line6="#Create your own learning group according to your preferences" line7="#Find your buddies to share self-improvement progress"  />
         </div>
         <div ref={el=> {aCard2=el}} className={`pf__projects__card ${active2 ? "active" : ""}`} onClick={handelChange2}>
-          <Card cover={wf} title="WishFund" line1="#Self initialized project" line2="#Project lauching page built with React" line3="For detailed information please check on lauching page" line4="Description" line5="#Decentralization" line6="#Full Democracy" line7="#Secured Finance"/>
+          <Card cover={wf} title="WishFund" line1="#Self initialized project" line2="*The project is in a lauching stage" line3="**For detailed information please check on lauching page" line4="Description" line5="#Decentralization" line6="#Full Democracy" line7="#Secured Finance"/>
         </div>
         <div ref={el=> {aCard3=el}} className={`pf__projects__card ${active3 ? "active" : ""}`} onClick={handelChange3}>
-          <Card cover={c3} title="Channel3" line1="#Self initialized project" line2="#Project lauching page built with React" line3="For detailed information please check on lauching page" line4="Description" line5="#Truly unbaised news by the AI" line6="#Everyone is a journist in their own life" line7="#Changing the traditional news and social media"/>
+          <Card cover={c3} title="Channel3" line1="#Self initialized project" line2="*The project is in a lauching stage" line3="**For detailed information please check on lauching page" line4="Description" line5="#Truly unbaised news by the AI" line6="#Everyone is a journist in their own life" line7="#Changing the traditional news and social media"/>
         </div>
       </div>
     </div>
