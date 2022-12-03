@@ -87,7 +87,13 @@
   clip-path: polygon(65% 0, 90% 0, 50% 100%, 25% 100%);
 }
 
-@media screen and (max-width: 1400px){
+.cat1 img {
+  width: 250px;
+  margin-top: 70vh;
+  margin-left: 180%;
+}
+
+@media screen and (max-width: 1540px){
   .pf__about__parallax_rus img {
     width: 100%;
     margin-left: 30%;
@@ -124,5 +130,10 @@
   .pf__about__parallax_il img {
     width: 205%;
     margin-top: 100%;
+  }
+  .cat1 img {
+    width: 140px;
+    margin-top: 70vh;
+    margin-left: 160%;
   }
 }

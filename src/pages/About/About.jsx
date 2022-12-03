@@ -2,6 +2,8 @@ import './about.css'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import ru from '../../assets/ru.png'
 import il from '../../assets/il.png'
+import cat1 from '../../assets/cat1.png'
+import { Logo } from '../../components'
 
 export function About() {
   return (
@@ -20,7 +22,11 @@ export function About() {
 
       <ParallaxLayer offset={0} factor={1.7} speed={-0.4}>
         <div className="pf__about__parallax_grey" >
-
+          <ParallaxLayer offset={0} speed={1.5}>
+            <div className="cat1">
+              <img src={cat1} alt="" />
+            </div>
+          </ParallaxLayer>
         </div>
       </ParallaxLayer>
 
@@ -51,6 +57,10 @@ export function About() {
           <p>Привет! Меня зовут <span className='marked'>Сэнь</span>))</p>
         </div>
       </ParallaxLayer>
+
+      {/* <ParallaxLayer offset={1.4} speed={-0.1}>
+        <Logo />
+      </ParallaxLayer> */}
 
       <ParallaxLayer offset={1} speed={0.1}>
         <div className="pf__about__parallax_intro_second introduction">

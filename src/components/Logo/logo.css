@@ -1,0 +1,23 @@
+.pf__logos {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+}
+
+.logos {
+  width: 10%;
+  background: transparent;
+}
+
+.logos img {
+  width: 100%;
+}
+
+.spinner {
+  transition: linear 2s;
+}
+
+
+.spinner img{
+  transition: all 2s;
+}

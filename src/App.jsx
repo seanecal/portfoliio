@@ -2,12 +2,12 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import { Navbar } from './components'
 import { About, Home, Projects, Cv } from './pages'
-import { gsap } from 'gsap'
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 function App() {
 
   return (
-    <>
+    <ParallaxProvider>
       <div className="pf__content">
         <Navbar />
         <Routes>
@@ -18,7 +18,7 @@ function App() {
         </Routes>
 
       </div>
-    </>
+    </ParallaxProvider>
   )
 }
 
