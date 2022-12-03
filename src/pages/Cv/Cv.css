@@ -1,3 +1,13 @@
+/* .pf__cv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+} */
+
+.container {
+  position: relative;
+}
+
 .pf__cv__left {
   display: flex;
   flex-direction: column;
