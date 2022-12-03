@@ -4,12 +4,16 @@ import ru from '../../assets/ru.png'
 import il from '../../assets/il.png'
 import cat1 from '../../assets/cat1.png'
 import cat2 from '../../assets/cat2.png'
-import { Logo } from '../../components'
+import cat5 from '../../assets/cat5.png'
+import circle from '../../assets/circle.png'
+import ball from '../../assets/whiteball.png'
+import main from '../../assets/main.png'
+import { Logo, Contact } from '../../components'
 
 export function About() {
   return (
   <div className="pf__about">
-    <Parallax className="pf__about__parallax" pages={4} ref={Parallax} horizontal>
+    <Parallax className="pf__about__parallax" pages={5} ref={Parallax} horizontal>
 
       <ParallaxLayer className="introduction firstCn" sticky={{start: 0, end: 1}} speed={0.1}>
         <p>您好，我是<span className='marked'>曹森</span>。</p>
@@ -17,7 +21,11 @@ export function About() {
 
       <ParallaxLayer offset={0} speed={0.5} factor={1.2}>
         <div className="pf__about__parallax_gold_start" >
-
+          <ParallaxLayer offset={0} speed={0}>
+            <div className="main">
+              <img src={main} alt="" />
+            </div>
+          </ParallaxLayer>
         </div>
       </ParallaxLayer>
 
@@ -49,10 +57,36 @@ export function About() {
         </div>
       </ParallaxLayer>
 
-      <ParallaxLayer offset={3} speed={1}>
+      <ParallaxLayer offset={3} speed={0.7}>
         <div className="pf__about__parallax_il">
           <ParallaxLayer offset={0} speed={0.1} >
             <img src={il} alt="Israeli Architecture"/>
+          </ParallaxLayer>
+        </div>
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={4} speed={0.5}>
+        <div className="pf__about__parallax_white_final">
+          <ParallaxLayer offset={0} speed={0}>
+            <div className="cat5">
+              <img src={cat5} alt="cat5" />
+            </div>
+          </ParallaxLayer>
+          <ParallaxLayer offset={0} speed={0}>
+            <div className="circle">
+              <img src={circle} alt="circle" />
+            </div>
+          </ParallaxLayer>
+        </div>
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={4} speed={0}>
+        <div className="whiteball">
+          <ParallaxLayer offset={0} speed={0.1} >
+            <img src={ball} alt="White ball"/>
+            <ParallaxLayer offset={0} speed={0.1} >
+
+            </ParallaxLayer>
           </ParallaxLayer>
         </div>
       </ParallaxLayer>
@@ -88,6 +122,10 @@ export function About() {
           <p>I came to Israel in 2017.</p>
           <p>Feel free to drop me a line!</p>
         </div>
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={4}>
+        <Contact />
       </ParallaxLayer>
 
     </Parallax>
