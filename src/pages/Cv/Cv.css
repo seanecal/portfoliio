@@ -1,61 +1,37 @@
-/* .pf__cv {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-} */
-
-.container {
-  position: relative;
+.pf__cv__pdf {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 35%;
+  height: 70vh;
 }
 
-.pf__cv__left {
-  display: flex;
-  flex-direction: column;
-}
-
-.pf__cv__left a {
-  color: var(--color-grey-dark);
-  font-family: var(--font-roboto);
-  font-size: 4rem;
-  font-weight: 900;
-  /* position: absolute;
-  top: 0;
-  right: 0 */
-}
-
-.pf__cv__left a:hover {
-  background: linear-gradient(90deg, #E76146,#E76146,#E76146, #fb0094, #0000ff, #0000ff, #00ff00, #00ff00, #ffff00, #ffff00);
-  color:transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 200% auto;
-  filter: blur(.5px);
-  animation: flush .3s linear 1;
-}
-
-@keyframes flush {
-  0% {
-    background-position: 0 0;
+@media screen and (max-width: 1416px) {
+  .pf__cv__pdf {
+    top: 600px;
+    left: 2%;
+    width: 70%;
+    height: 40vh;
   }
-  0% {
-    background-position: 200% 0;
+}
+
+@media screen and (max-width: 710px) {
+  .pf__cv__pdf {
+    top: 40%;
+    height: 60vh;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .pf__cv__left a {
-    font-size: 24px;
-    top: 4%;
+  .pf__cv__pdf {
+    top: 40%;
+    height: 25vh;
+    width: 90%;
   }
-  .pf__cv__left a:focus {
-    background: linear-gradient(90deg, #E76146,#E76146,#E76146, #fb0094, #0000ff, #0000ff, #00ff00, #00ff00, #ffff00, #ffff00);
-    color:transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200% auto;
-    filter: blur(.5px);
-    animation: flush .3s linear 1;
+}
+
+@media screen and (max-width: 400px) {
+  .pf__cv__pdf {
+    top: 40%;
   }
 }

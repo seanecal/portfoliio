@@ -1,18 +1,14 @@
 import { Contact } from '../../components'
 import './Cv.css'
+import CV from '../../CV.pdf'
 
 export function Cv() {
+
   return (
     <div className='pf__cv'>
-      <div className="container">
-        <div className="pf__cv__left">
-          <a href="#"><p>Download CV</p></a>
-        </div>
-
-      </div>
       <Contact />
       <div className="pf__cv__pdf">
-        <iframe src="https://youtu.be/SAUIQHIqCVk" width="50%" height="500px"></iframe>
+        <iframe src={CV} width="100%" height="100%"></iframe>
       </div>
     </div>
   )

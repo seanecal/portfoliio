@@ -97,7 +97,6 @@ a:hover .link {
   }
 }
 
-
 @media screen and (max-width: 715px) {
   .grey {
     font-size: 16px;
@@ -134,5 +133,21 @@ a:hover .link {
     background-size: 200% auto;
     filter: blur(.5px);
     animation: flush .3s linear 1;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .grey {
+    font-size: 4px;
+  }
+  .line1 {
+    left: 2.04rem;
+  }
+  .line2 {
+    top: 2rem
+  }
+  .line3 {
+    top: 4rem;
+    left:0.45rem;
   }
 }
