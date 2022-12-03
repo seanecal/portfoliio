@@ -1,10 +1,13 @@
-import { Logo } from '../../components'
+import { Contact } from '../../components'
 import './Cv.css'
 
 export function Cv() {
   return (
     <div>
-      <Logo />
+      <Contact />
+      <div className="pf__cv__left">
+        <a href="#"><p>Download CV</p></a>
+      </div>
     </div>
   )
 }

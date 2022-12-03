@@ -5,6 +5,8 @@ import il from '../../assets/il.png'
 import cat1 from '../../assets/cat1.png'
 import cat2 from '../../assets/cat2.png'
 import cat5 from '../../assets/cat5.png'
+import cat6 from '../../assets/cat6.png'
+import cat7 from '../../assets/cat7.png'
 import circle from '../../assets/circle.png'
 import ball from '../../assets/whiteball.png'
 import main from '../../assets/main.png'
@@ -84,9 +86,12 @@ export function About() {
         <div className="whiteball">
           <ParallaxLayer offset={0} speed={0.1} >
             <img src={ball} alt="White ball"/>
-            <ParallaxLayer offset={0} speed={0.1} >
+          </ParallaxLayer>
+        </div>
 
-            </ParallaxLayer>
+        <div className="cat6">
+          <ParallaxLayer offset={0} speed={0.1} >
+            <img src={cat6} alt="cat6" className='cat6'/>
           </ParallaxLayer>
         </div>
       </ParallaxLayer>
@@ -125,7 +130,17 @@ export function About() {
       </ParallaxLayer>
 
       <ParallaxLayer offset={4}>
-        <Contact />
+        <div className="pf__about__contact">
+          <div className="pf__about_contact__easteregg">
+            <div className="pf__about_contact__easteregg__text">
+              <p>By the way---</p>
+              <p>Without checking again</p>
+              <h3>Did you find all 7 cats?</h3>
+            </div>
+            <img src={cat7} alt="cat7" />
+          </div>
+          <Contact />
+        </div>
       </ParallaxLayer>
 
     </Parallax>

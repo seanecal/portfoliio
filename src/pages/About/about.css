@@ -106,14 +106,43 @@
   clip-path: polygon(60% 0, 100% 0, 100% 100%, 20% 100%);
 }
 
+.pf__about__contact {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  gap: 1rem;
+}
+
+.pf__about_contact__easteregg {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.pf__about_contact__easteregg p {
+  color: var(--color-grey-dark);
+  font-family: var(--font-roboto);
+  font-size: 1.6rem;
+}
+
+.pf__about_contact__easteregg h3 {
+  color: var(--color-grey-dark);
+  font-family: var(--font-roboto);
+  font-size: 2rem;
+}
+
+.pf__about_contact__easteregg img {
+  width: 8%
+}
+
 .circle {
-  width: 40vw;
-  margin-top: 80vh;
-  margin-left: 40%;
+  margin-top: 100vh;
 }
 
 .circle img {
-  width: 100%;
+  width: 50%;
+  margin-top: -20%;
+  margin-left: 35%;
 }
 
 .whiteball {
@@ -126,10 +155,20 @@
   margin-left: 30%;
 }
 
-.cat5  img {
+.cat5 img {
   width: 250px;
   margin-top: 90vh;
   margin-left: 90%;
+}
+
+.cat6 {
+  width: 20vw;
+}
+
+.cat6 img {
+  width: 10%;
+  margin-top: 8%;
+  margin-left: 20%;
 }
 
 .cat1 img {
@@ -219,5 +258,14 @@
     width: 150px;
     margin-top: 82vh;
     margin-left: 75%;
+  }
+  .pf__about_contact__easteregg p {
+    font-size: 16px;
+  }
+  .pf__about_contact__easteregg h3 {
+    font-size: 24px;
+  }
+  .pf__about__contact {
+    margin-top: 1rem;
   }
 }

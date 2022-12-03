@@ -1,0 +1,138 @@
+.pf__contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0rem;
+}
+
+.pf__contact__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.pf__contact__title p {
+  font-family: var(--font-roboto);
+  font-weight: 900;
+}
+
+.orange-txt {
+  color: var(--color-orange);
+  font-size: 4rem;
+}
+
+.orange-quote {
+  color: var(--color-orange);
+  font-size: 2rem;
+}
+
+.blue {
+  color: var(--color-blue-dark);
+  font-size: 2rem;
+}
+
+.green {
+  color: var(--color-green-dark);
+  font-size: 2rem;
+}
+.white {
+  color: var(--color-white);
+  font-size: 2rem;
+}
+
+.pf__contact__link {
+  position: relative;
+}
+
+.pf__contact__link p {
+  font-family: var(--font-roboto);
+  position: absolute;
+}
+
+.grey {
+  font-weight: 200;
+  font-size: 3rem;
+  color: var(--color-grey-light);
+  opacity: 0.3;
+}
+
+.line1 {
+  left: 3.6rem;
+}
+.line2 {
+  top: 3.5rem
+}
+.line3 {
+  top: 7rem;
+  left:9.4rem;
+}
+
+.link {
+  font-weight: 900;
+  font-size: 5rem;
+  color: var(--color-grey-dark);
+}
+
+.firstletter {
+  color: var(--color-raddish);
+}
+
+a:hover .link {
+  background: linear-gradient(90deg, #E76146,#E76146,#E76146, #fb0094, #0000ff, #0000ff, #00ff00, #00ff00, #ffff00, #ffff00);
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  filter: blur(.5px);
+  animation: flush .3s linear 1;
+}
+
+@keyframes flush {
+  0% {
+    background-position: 0 0;
+  }
+  0% {
+    background-position: 200% 0;
+  }
+}
+
+
+@media screen and (max-width: 715px) {
+  .grey {
+    font-size: 16px;
+    color: var(--color-grey-dark);
+  }
+  .line1 {
+    left: 2.04rem;
+  }
+  .line2 {
+    top: 2rem
+  }
+  .line3 {
+    top: 4rem;
+    left:2.4rem;
+  }
+  .link {
+    font-size: 56px;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .orange-txt {
+    font-size: 32px;
+  }
+  .white, .blue, .orange-quote, .green {
+    font-size: 16px;
+  }
+  a:focus .link {
+    background: linear-gradient(90deg, #E76146,#E76146,#E76146, #fb0094, #0000ff, #0000ff, #00ff00, #00ff00, #ffff00, #ffff00);
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    filter: blur(.5px);
+    animation: flush .3s linear 1;
+  }
+}
