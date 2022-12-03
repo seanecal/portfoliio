@@ -1,0 +1,94 @@
+.pf__about .pf__about__parallax {
+  overflow: hidden;
+}
+
+.pf__about__parallax_intro, .pf__about__parallax_intro_second  {
+  margin: 5rem 0 0 0rem;
+  padding: 2rem 0 0 0;
+  z-index: 1;
+}
+
+.introduction p {
+  color: var(--color-grey-dev);
+  font-family: var(--font-roboto);
+  font-weight: 800;
+  font-size: 2rem;
+  z-index: 1;
+}
+
+.pf__about__parallax_intro p:first-child,
+.pf__about__parallax_intro_second p:nth-child(2){
+  font-size: 5rem;
+}
+
+.pf__about__parallax_intro p:nth-child(2) {
+  unicode-bidi: embed;
+}
+
+.firstCn {
+  margin-top: 4rem;
+}
+
+.marked {
+  color: var(--color-raddish);
+}
+
+.pf__about__parallax_gold_start {
+  background: var(--color-gold);
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(60% 0, 100% 0, 50% 100%, 10% 100%);
+}
+
+.pf__about__parallax_grey {
+  background: #20232F;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(70% 0, 100% 0, 70% 100%, 35% 100%);
+}
+
+.pf__about__parallax_white {
+  background: var(--color-white);
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(10% 0, 30% 0, 50% 100%, 90% 100%);
+}
+
+.pf__about__parallax_rus {
+  background: #EA4F4F;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  clip-path: polygon(40% 0, 70% 0, 30% 100%, 0% 100%);
+}
+
+.pf__about__parallax_il {
+  background: #1F53B9;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  clip-path: polygon(65% 0, 90% 0, 50% 100%, 25% 100%);
+}
+
+@media screen and (max-width: 600px) {
+  .pf__about__parallax_intro, .pf__about__parallax_intro_second {
+    margin: 5rem 0 0 0rem;
+    padding: 0;
+  }
+  .introduction p {
+    font-size: 16px;
+  }
+  .firstCn {
+    margin: 3.5rem 0 0 0rem;
+    padding: 0;
+  }
+  .pf__about__parallax_intro p:first-child,
+  .pf__about__parallax_intro_second p:nth-child(3) {
+    font-size: 40px;
+  }
+}
