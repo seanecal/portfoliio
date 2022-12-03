@@ -66,6 +66,18 @@
   clip-path: polygon(40% 0, 70% 0, 30% 100%, 0% 100%);
 }
 
+.pf__about__parallax_rus img {
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 10%;
+}
+.pf__about__parallax_il img {
+  width: 105%;
+  opacity: 0.9;
+  margin-left: 20%;
+  margin-top: 26%;
+}
+
 .pf__about__parallax_il {
   background: #1F53B9;
   z-index: -1;
@@ -75,7 +87,21 @@
   clip-path: polygon(65% 0, 90% 0, 50% 100%, 25% 100%);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1400px){
+  .pf__about__parallax_rus img {
+    width: 100%;
+    margin-left: 30%;
+    opacity: 0.6;
+  }
+  .pf__about__parallax_il img {
+    width: 205%;
+    opacity: 0.5;
+    margin-left: -20%;
+    margin-top: 50%;
+  }
+}
+
+@media screen and (max-width: 680px) {
   .pf__about__parallax_intro, .pf__about__parallax_intro_second {
     margin: 5rem 0 0 0rem;
     padding: 0;
@@ -88,7 +114,15 @@
     padding: 0;
   }
   .pf__about__parallax_intro p:first-child,
-  .pf__about__parallax_intro_second p:nth-child(3) {
+  .pf__about__parallax_intro_second p:nth-child(2) {
     font-size: 40px;
+  }
+  .pf__about__parallax_rus img {
+    width: 150%;
+    margin-left: 15%;
+  }
+  .pf__about__parallax_il img {
+    width: 205%;
+    margin-top: 100%;
   }
 }
