@@ -93,6 +93,12 @@
   margin-left: 180%;
 }
 
+.cat2 img {
+  width: 220px;
+  margin-top: 60vh;
+  margin-left: 180%;
+}
+
 @media screen and (max-width: 1540px){
   .pf__about__parallax_rus img {
     width: 100%;
@@ -135,5 +141,10 @@
     width: 140px;
     margin-top: 70vh;
     margin-left: 160%;
+  }
+  .cat2 img {
+    width: 120px;
+    margin-top: 80vh;
+    margin-left: 200%;
   }
 }
