@@ -232,8 +232,8 @@ export function Projects() {
       </div>
       <div className="pf__projects__notice" ref={el=>{
       noticeItem = el}}>
-        <p>*find more on my <a href="#" target="__blank">[GitHub]</a> repo</p>
-        <p>**watch me presenting SharedGoal <a href="#" target="__blank">[here]</a></p>
+        <p>*find more on my <a href="https://github.com/seanecal" target="__blank">[GitHub]</a> repo</p>
+        <p>**watch me presenting SharedGoal <a href="https://youtu.be/SAUIQHIqCVk" target="__blank">[here]</a></p>
       </div>
       <div className="pf__projects__cards" ref={el=> {cardItem = el}}>
         <div ref={el=> {aCard=el}}className={`pf__projects__card ${active1 ? "active" : ""}`} onClick={handelChange1}>

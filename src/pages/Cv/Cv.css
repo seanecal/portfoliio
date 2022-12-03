@@ -8,9 +8,9 @@
   font-family: var(--font-roboto);
   font-size: 4rem;
   font-weight: 900;
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  right: 0
+  right: 0 */
 }
 
 .pf__cv__left a:hover {

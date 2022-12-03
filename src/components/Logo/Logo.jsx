@@ -1,5 +1,5 @@
 import './logo.css'
-import { Parallax, useParallax } from 'react-scroll-parallax';
+// import { Parallax, useParallax } from 'react-scroll-parallax';
 import blender from '../../assets/logos/blender.png'
 import css from '../../assets/logos/css.png'
 import figma from '../../assets/logos/figma.png'
@@ -23,7 +23,6 @@ export function Logo() {
   // });
   return(
     // <div ref={parallax.ref} className='spinner' id="js-logo">
-    //   😃
     //   <img src={ruby} alt="ruby" />
     // </div>
     <>

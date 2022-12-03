@@ -18,20 +18,20 @@ export function Contact() {
 
       <div className="pf__contact__link">
         <p className="line1"><span className="grey">Feel free to</span>
-        <a href="#" target="__blank">
+        <a href="mailto:caosen.cn@gmail.com">
           <span className="link"><span className="firstletter">E</span>mail</span>
         </a>
         <span className="grey">me</span>
         </p>
 
         <p className="line2"><span className="grey">connect on</span>
-        <a href="" target="__blank">
+        <a href="https://github.com/seanecal" target="__blank">
           <span className="link"><span className="firstletter">G</span>ithub</span>
         </a>
         </p>
 
         <p className="line3"><span className="grey">and</span>
-        <a href="#" target="__blank">
+        <a href="https://linkedin.com/in/sencao94" target="__blank">
           <span className="link"><span className="firstletter">L</span>inkedIn</span>
         </a>
         </p>
