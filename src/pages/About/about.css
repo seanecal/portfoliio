@@ -293,12 +293,16 @@
   .guidance__content p {
     font-size: 1rem;
   }
+  .guidance {
+    opacity: 0.9;
+  }
 }
 
 @media screen and (max-width: 420px) {
   .pf__about__parallax_il img {
-    width:300%;
-    margin-top: 105%;
+    width:320%;
+    margin-left: 40%;
+    margin-top: 65%;
   }
   .pf__about__parallax_rus img {
     width: 150%;

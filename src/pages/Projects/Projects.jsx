@@ -3,6 +3,7 @@ import './projects.css'
 import c3 from '../../assets/logo-c3.png'
 import c3v from '../../assets/c3.mp4'
 import sgv from '../../assets/sg.mp4'
+import wfv from '../../assets/wf.mp4'
 import wf from '../../assets/logo-wf.png'
 import sm from '../../assets/logo-sg.png'
 import { Power3, gsap} from 'gsap'
@@ -160,13 +161,13 @@ export function Projects() {
         </div>
         <div className="pf__projects__cards" ref={el=> {cardItem = el}}>
           <div ref={el=> {aCard=el}}className={`pf__projects__card ${active1 ? "active" : ""}`} onClick={handelChange1}>
-            <Card cover={sm} title="SharedGoal" line1="#Built with Ruby on Rails" line2="#Le Wagon final project " line3="*The app is in a beta demo version" line4="Description" line5="#Web App that brings togetherness to solo learning process" line6="#Create your own learning group according to your preferences" line7="#Find your buddies to share self-improvement progress"  pic={sgv}/>
+            <Card cover={sm} title="SharedGoal" line1="#Built with Ruby on Rails" line2="#Le Wagon final project " line3="*The app is in a beta demo version" line4="Description" line5="#Web App that brings togetherness to solo learning process" line6="#Create your own learning group according to your preferences" line7="#Find your buddies to share self-improvement progress"  pic={sgv} href="http://www.sharedgoal.org/"/>
           </div>
           <div ref={el=> {aCard2=el}} className={`pf__projects__card ${active2 ? "active" : ""}`} onClick={handelChange2}>
-            <Card cover={wf} title="WishFund" line1="#Self initialized project" line2="*The project is in a lauching stage" line3="**For detailed information please check on lauching page" line4="Description" line5="#Decentralization" line6="#Full Democracy" line7="#Secured Finance"/>
+            <Card cover={wf} title="WishFund" line1="#Self initialized project" line2="*The project is in a lauching stage" line3="**For detailed information please check on lauching page" line4="Description" line5="#Decentralization" line6="#Full Democracy" line7="#Secured Finance" pic={wfv} href="https://www.wishfund.info/#homes"/>
           </div>
           <div ref={el=> {aCard3=el}} className={`pf__projects__card ${active3 ? "active" : ""}`} onClick={handelChange3}>
-            <Card cover={c3} title="Channel3" line1="#Self initialized project" line2="*The project is in a lauching stage" line3="**For detailed information please check on lauching page" line4="Description" line5="#Truly unbaised news by the AI" line6="#Everyone is a journist in their own life" line7="#Changing the traditional news and social media" pic={c3v}/>
+            <Card cover={c3} title="Channel3" line1="#Self initialized project" line2="*The project is in a lauching stage" line3="**For detailed information please check on lauching page" line4="Description" line5="#Truly unbaised news by the AI" line6="#Everyone is a journist in their own life" line7="#Changing the traditional news and social media" pic={c3v} href="https://www.channelthree.info/"/>
           </div>
         </div>
       </div>

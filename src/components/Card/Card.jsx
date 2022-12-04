@@ -1,6 +1,6 @@
 import './card.css'
 
-export function Card({cover, title, line1, line2, line3, line4, line5, line6, line7, pic}) {
+export function Card({cover, title, line1, line2, line3, line4, line5, line6, line7, pic, href}) {
   return (
     <div className="pf__card">
       <div className="overlay"></div>
@@ -10,7 +10,7 @@ export function Card({cover, title, line1, line2, line3, line4, line5, line6, li
       </div>
       <div className="pf__card__header">
         <div className="pf__card__header__title">
-          <a href="#" target="__blank">
+          <a href={href} target="__blank">
            <h1>{title}</h1>
           </a>
         </div>
