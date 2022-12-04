@@ -1,6 +1,7 @@
 import { Card } from '../../components'
 import './projects.css'
 import c3 from '../../assets/logo-c3.png'
+import c3v from '../../assets/c3.mp4'
 import wf from '../../assets/logo-wf.png'
 import sm from '../../assets/logo-sg.png'
 import { Power3, gsap} from 'gsap'
@@ -164,7 +165,7 @@ export function Projects() {
             <Card cover={wf} title="WishFund" line1="#Self initialized project" line2="*The project is in a lauching stage" line3="**For detailed information please check on lauching page" line4="Description" line5="#Decentralization" line6="#Full Democracy" line7="#Secured Finance"/>
           </div>
           <div ref={el=> {aCard3=el}} className={`pf__projects__card ${active3 ? "active" : ""}`} onClick={handelChange3}>
-            <Card cover={c3} title="Channel3" line1="#Self initialized project" line2="*The project is in a lauching stage" line3="**For detailed information please check on lauching page" line4="Description" line5="#Truly unbaised news by the AI" line6="#Everyone is a journist in their own life" line7="#Changing the traditional news and social media"/>
+            <Card cover={c3} title="Channel3" line1="#Self initialized project" line2="*The project is in a lauching stage" line3="**For detailed information please check on lauching page" line4="Description" line5="#Truly unbaised news by the AI" line6="#Everyone is a journist in their own life" line7="#Changing the traditional news and social media" pic={c3v}/>
           </div>
         </div>
       </div>

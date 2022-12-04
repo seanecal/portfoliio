@@ -1,9 +1,10 @@
 import './card.css'
-import name from '../../assets/name-sm.png'
 
 export function Card({cover, title, line1, line2, line3, line4, line5, line6, line7, pic}) {
   return (
     <div className="pf__card">
+      <div className="overlay"></div>
+      <video src={pic} autoPlay loop muted></video>
       <div className="pf__card__cover">
         <img src={cover} alt="" />
       </div>
@@ -36,9 +37,6 @@ export function Card({cover, title, line1, line2, line3, line4, line5, line6, li
             {line7}
           </p>
         </div>
-      </div>
-      <div className="pf__card__pic">
-        <img src={pic} alt="" />
       </div>
     </div>
   )

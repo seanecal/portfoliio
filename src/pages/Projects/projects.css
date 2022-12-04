@@ -127,6 +127,9 @@
   .pf__projects__card {
     height: 10rem;
   }
+  .pf__projects__card.active {
+    height: min(25rem);
+  }
 }
 
 @media screen and (max-width: 550px) {
