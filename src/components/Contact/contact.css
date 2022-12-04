@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: flex-start;
   gap: 0rem;
+  z-index: 100;
 }
 
 .pf__contact__title {

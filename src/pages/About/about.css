@@ -231,6 +231,10 @@
     margin-left: 45%;
     opacity: 0.85;
   }
+  .pf__about__parallax_il img {
+    width: 245%;
+    margin-top: 60%;
+  }
 }
 
 @media screen and (max-width: 680px) {
@@ -255,7 +259,7 @@
   }
   .pf__about__parallax_il img {
     width: 205%;
-    margin-top: 100%;
+    margin-top: 55%;
   }
   .cat1 img {
     width: 140px;
@@ -288,5 +292,47 @@
   }
   .guidance__content p {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .pf__about__parallax_il img {
+    width:300%;
+    margin-top: 105%;
+  }
+  .pf__about__parallax_rus img {
+    width: 150%;
+    margin-top: 25%;
+  }
+}
+
+@media screen and (max-width: 394px) {
+  .pf__about__parallax_il img {
+    width: 305%;
+    margin-top: 105%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .pf__about__parallax_il img {
+    width: 205%;
+    margin-top: 105%;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .pf__about__parallax_il img {
+    width: 305%;
+    margin-top: 95%;
+  }
+}
+
+@media screen and (max-width: 281px) {
+  .pf__about__parallax_il img {
+    margin-top: 125%;
+  }
+  .pf__about__parallax_rus img {
+    width: 150%;
+    margin-top: 35%;
   }
 }

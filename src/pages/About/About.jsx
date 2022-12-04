@@ -23,14 +23,15 @@ export function About() {
     gsap.to(
       aboutContent,
       {
-        duration: 2,
+        duration: 1.2,
         opacity:1,
-        ease:Power3.easeOut
+        ease:Power3.easeIn
       }
     )
   },[])
 
   return (
+
   <div className="pf__about" ref={el => {aboutContent=el}}>
     <Parallax className="pf__about__parallax" pages={5} ref={ref} horizontal>
 

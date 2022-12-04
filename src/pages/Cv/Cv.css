@@ -1,5 +1,10 @@
 .pf__cv {
   opacity: 0;
+  width: 100%;
+  height: 100vh;
+  background: url(../../assets/bg.png);
+  background-size: cover;
+  scale: 1.1;
 }
 
 .pf__cv__pdf {
@@ -26,6 +31,15 @@
   color: var(--color-grey-verydark);
   font-size: 64px;
   font-weight: 900;
+}
+
+.contact {
+  z-index: 100;
+}
+
+.bg {
+  height: 100vh;
+  width: 100%;
 }
 
 @keyframes flush {
