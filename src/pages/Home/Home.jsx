@@ -2,6 +2,7 @@ import './home.css'
 import name from '../../assets/name-lg.png'
 import name_sm from '../../assets/name-sm.png'
 import { useEffect, useRef, useState } from 'react'
+import { gsap, Power3 } from 'gsap'
 
 function WindowSize() {
   const [screen, setScreen] = useState(window.innerWidth)
@@ -21,25 +22,17 @@ export function Home() {
 
   const theWidth = WindowSize()
 
-  // let line1 = useRef(null)
-  // let line2 = useRef(null)
-  // let line3 = useRef(null)
-  // let line4 = useRef(null)
-  // let line5 = useRef(null)
-  // let line6 = useRef(null)
-  // let line7 = useRef(null)
-  // let line8 = useRef(null)
-  // let line9 = useRef(null)
-  // let line10 = useRef(null)
-  // let line11 = useRef(null)
-  // let line12 = useRef(null)
-  // let line13 = useRef(null)
-  // let line14 = useRef(null)
-  // let line15 = useRef(null)
+  let homeContent = useRef(null)
 
-  // useEffect(()=> {
-  //   TweenMax.staggerFrom([line1, line2, line3, line4, line5,line6, line7, line8,line9,line10,line11,line12,line13,line14,line15], 5,{opacity: 0}, .2)
-  // },[])
+  useEffect(()=> {
+    gsap.to (
+      homeContent, {
+        duration: 2,
+        opacity:1,
+        ease:Power3.easeOut
+      }
+    )
+  },[])
 
   function setPic() {
     if (theWidth > 550) {
@@ -50,7 +43,7 @@ export function Home() {
   }
 
   return (
-    <div className="pf__home">
+    <div className="pf__home" ref={el => {homeContent=el}}>
       <div className="pf__home__name">
         {setPic()}
      </div>

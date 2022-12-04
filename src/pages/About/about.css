@@ -1,3 +1,7 @@
+.pf__about {
+  opacity: 0;
+}
+
 .pf__about .pf__about__parallax {
   overflow: hidden;
 }

@@ -1,3 +1,7 @@
+.pf__cv {
+  opacity: 0;
+}
+
 .pf__cv__pdf {
   position: absolute;
   top: 10%;
@@ -6,32 +10,51 @@
   height: 70vh;
 }
 
+.pf__cv__button a:hover p{
+  background: linear-gradient(90deg, #E76146,#E76146,#E76146, #fb0094, #0000ff, #0000ff, #00ff00, #00ff00, #ffff00, #ffff00);
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  filter: blur(.5px);
+  animation: flush .3s linear 1;
+}
+
+.pf__cv__button p {
+  font-family: var(--font-roboto);
+  color: var(--color-grey-verydark);
+  font-size: 64px;
+  font-weight: 900;
+}
+
+@keyframes flush {
+  0% {
+    background-position: 0 0;
+  }
+  0% {
+    background-position: 200% 0;
+  }
+}
+
 @media screen and (max-width: 1416px) {
   .pf__cv__pdf {
-    top: 600px;
-    left: 2%;
-    width: 70%;
-    height: 40vh;
+    display: none;
   }
 }
 
 @media screen and (max-width: 710px) {
-  .pf__cv__pdf {
-    top: 40%;
-    height: 60vh;
+  .pf__cv__button a:focus p{
+    background: linear-gradient(90deg, #E76146,#E76146,#E76146, #fb0094, #0000ff, #0000ff, #00ff00, #00ff00, #ffff00, #ffff00);
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    filter: blur(.5px);
+    animation: flush .3s linear 1;
   }
-}
-
-@media screen and (max-width: 650px) {
-  .pf__cv__pdf {
-    top: 40%;
-    height: 25vh;
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .pf__cv__pdf {
-    top: 40%;
+  .pf__cv__button p {
+    font-size: 40px;
   }
 }

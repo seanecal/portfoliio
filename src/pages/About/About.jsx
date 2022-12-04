@@ -11,10 +11,26 @@ import circle from '../../assets/circle.png'
 import ball from '../../assets/whiteball.png'
 import main from '../../assets/main.png'
 import { Logo, Contact } from '../../components'
+import { useEffect, useRef } from 'react'
+import { Power3, gsap} from 'gsap'
 
 export function About() {
+
+  let aboutContent =useRef(null)
+
+  useEffect(()=>{
+    gsap.to(
+      aboutContent,
+      {
+        duration: 2,
+        opacity:1,
+        ease:Power3.easeOut
+      }
+    )
+  },[])
+
   return (
-  <div className="pf__about">
+  <div className="pf__about" ref={el => {aboutContent=el}}>
     <Parallax className="pf__about__parallax" pages={5} ref={Parallax} horizontal>
 
       <ParallaxLayer className="introduction firstCn" sticky={{start: 0, end: 1}} speed={0.1}>
