@@ -17,6 +17,7 @@ import { Power3, gsap} from 'gsap'
 export function About() {
 
   let aboutContent =useRef(null)
+  const ref = useRef()
 
   useEffect(()=>{
     gsap.to(
@@ -31,7 +32,13 @@ export function About() {
 
   return (
   <div className="pf__about" ref={el => {aboutContent=el}}>
-    <Parallax className="pf__about__parallax" pages={5} ref={Parallax} horizontal>
+    <Parallax className="pf__about__parallax" pages={5} ref={ref} horizontal>
+
+      <ParallaxLayer className="guidance" offset={0} speed={24}>
+        <div className="guidance__content">
+          <p>← Scroll left and right →</p>
+        </div>
+      </ParallaxLayer>
 
       <ParallaxLayer className="introduction firstCn" sticky={{start: 0, end: 1}} speed={0.1}>
         <p>您好，我是<span className='marked'>曹森</span>。</p>

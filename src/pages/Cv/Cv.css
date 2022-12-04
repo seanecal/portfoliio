@@ -18,7 +18,7 @@
   -webkit-text-fill-color: transparent;
   background-size: 200% auto;
   filter: blur(.5px);
-  animation: flush .3s linear 1;
+  animation: flush .5s linear 1;
 }
 
 .pf__cv__button p {

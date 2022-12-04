@@ -20,6 +20,20 @@
   z-index: 1;
 }
 
+.guidance {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  opacity: 0.3;
+}
+
+.guidance__content p {
+  color: var(--color-grey-dark);
+  font-family: var(--font-roboto);
+  font-size: 2rem;
+  font-weight: 900;
+}
+
 .pf__about__parallax_intro p:first-child,
 .pf__about__parallax_intro_second p:nth-child(2){
   font-size: 5rem;
@@ -197,7 +211,7 @@
     width: 205%;
     opacity: 0.5;
     margin-left: -20%;
-    margin-top: 50%;
+    margin-top: 55%;
   }
   .main {
     width: 40%;
@@ -271,5 +285,8 @@
   }
   .pf__about__contact {
     margin-top: 1rem;
+  }
+  .guidance__content p {
+    font-size: 1rem;
   }
 }
