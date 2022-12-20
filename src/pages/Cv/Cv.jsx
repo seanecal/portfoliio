@@ -41,13 +41,13 @@ export function Cv() {
       }
     }}>
       <div className='pf__cv' ref={el => {pageContent=el}}>
-        <div className="pf__cv__pdf">
+        {/* <div className="pf__cv__pdf">
           <iframe src={CV} width="100%" height="100%"></iframe>
-        </div>
+        </div> */}
         <div className="bg" >
-          <div className="pf__cv__button">
+          {/* <div className="pf__cv__button">
             <a href={CV}><p>Download CV</p></a>
-          </div>
+          </div> */}
           <Contact className="contact"/>
         </div>
       </div>

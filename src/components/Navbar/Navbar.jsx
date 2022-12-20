@@ -48,7 +48,7 @@ export function Navbar() {
           : (
           <>
             <NavLink to="/cv">
-              CV
+              Links
             </NavLink>
           </>)}
         </div>
